@@ -12,6 +12,7 @@ export default function Home() {
 			</Head>
 			<main>
 				<h1 className="bg-slate-600 text-red-500">Hello world</h1>
+				<h1>Testing... </h1>
 			</main>
 		</>
 	);
