@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-function OrderHistory() {
-	return <div>OrderHistory</div>; // comment
+export default function OrderHistory() {
+  return (
+    <div>OrderHistory</div>
+  )
 }
-
-export default OrderHistory;

@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -11,7 +12,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<h1 className="bg-slate-600 text-red-500">Hello world</h1>
+				<Navbar/>
+	
 			</main>
 		</>
 	);
