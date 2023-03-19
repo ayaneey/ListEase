@@ -2,10 +2,9 @@ import React from "react";
 
 function Navbar() {
 	return (
-		<div>hi
-			<p className=" text-5xl text-emerald-600">hi</p>
+		<div>
+			<h1 className="text-red-500">Hello</h1>
 		</div>
-
 	);
 }
 
