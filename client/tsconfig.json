@@ -14,10 +14,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "plugins": [
+      {
+        "name": "tailwindcss-intelliSense "
+      }
+    ],
     "paths": {
       "@/*": ["./src/*"]
     }
+    
   },
+
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

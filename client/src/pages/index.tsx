@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
+import Hero from "../components/Home/Hero";
 
 export default function Home() {
 	return (
@@ -12,8 +13,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<Navbar/>
-	
+				<Navbar />
+				<Hero />
 			</main>
 		</>
 	);
