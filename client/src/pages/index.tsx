@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/Home/Hero";
 import Services from "../components/Home/Services";
+import EnquireServices from "../components/Home/EnquireServices";
+import Footer from "../components/Home/Footer";
 
 export default function Home() {
 	return (
@@ -17,6 +19,8 @@ export default function Home() {
 				<Navbar />
 				<Hero />
 				<Services />
+				<EnquireServices />
+				<Footer />
 			</main>
 		</>
 	);

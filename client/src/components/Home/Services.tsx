@@ -22,7 +22,7 @@ function Services() {
 			>
 				<div className="w-1/2 pr-2">
 					<div className="flex justify-center mt-18">
-						<img src="./services.svg" className="mt-16" />
+						<img src="./services.svg" className="mt-8" />
 					</div>
 				</div>
 				<div className="w-1/2 pl-2">
