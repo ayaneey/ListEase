@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/Home/Hero";
+import Services from "../components/Home/Services";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 			<main>
 				<Navbar />
 				<Hero />
+				<Services />
 			</main>
 		</>
 	);
