@@ -6,11 +6,10 @@ function Services() {
 			<nav className="bg-gray-200 shadow">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between h-16">
-						<div className="flex-shrink-0 flex items-center">
-							<h1 className="text-3xl font-bold text-gray-800 pl-0 py-2 rounded-lg">
-								Services Overview
-							</h1>
-						</div>
+						<h1 className="text-3xl font-bold text-gray-800 pl-0 py-2 rounded-lg">
+							Services Overview
+							<span className="bg-green-custom h-5 w-12 ml-4 inline-block"></span>
+						</h1>
 					</div>
 				</div>
 			</nav>
