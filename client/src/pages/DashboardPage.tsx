@@ -1,11 +1,14 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
+import Dashboard from "../components/Dashboard";
 
 function DashboardPage() {
 	return (
 		<div className="flex h-screen">
 			<Sidebar />
-			<div className="flex-1 bg-white">{<h1>Hello world</h1>}</div>
+			<div className="flex-1 bg-white">
+				<Dashboard />
+			</div>
 		</div>
 	);
 }

@@ -1,32 +1,27 @@
 import React from "react";
+import Link from "next/link";
+import { FaHistory, FaUser, FaList } from "react-icons/fa";
 
 function Sidebar() {
 	return (
-		<div>
-			return (
-			<div className="h-screen bg-gray-200">
-				<div className="p-6">
-					<h2 className="text-lg font-medium">Dashboard</h2>
-					<ul className="mt-4">
-						<li className="mb-4">
-							<a href="#" className="text-gray-600 hover:text-gray-800">
-								Home
-							</a>
-						</li>
-						<li className="mb-4">
-							<a href="#" className="text-gray-600 hover:text-gray-800">
-								About
-							</a>
-						</li>
-						<li className="mb-4">
-							<a href="#" className="text-gray-600 hover:text-gray-800">
-								Contact
-							</a>
-						</li>
-					</ul>
+		<div className="flex flex-col h-screen w-56 px-4 py-8 bg-gray-800 text-white">
+			<Link href="/dashboard">
+				<div className="text-2xl font-bold mb-8 cursor-pointer">
+					<img src="../Logo.svg" />
 				</div>
+			</Link>
+			<div className="flex items-center mb-8">
+				<FaHistory className="text-xl mr-2" />
+				<span className="mr-2">History</span>
 			</div>
-			);
+			<div className="flex items-center mb-8">
+				<FaUser className="text-xl mr-2" />
+				<span className="mr-2">My Account</span>
+			</div>
+			<div className="flex items-center mb-8">
+				<FaList className="text-xl mr-2" />
+				<span className="mr-2">Create List</span>
+			</div>
 		</div>
 	);
 }
