@@ -24,14 +24,6 @@ function Navbar() {
 			</div>
 			<div className=" w-full   h-max justify-end   flex md:hidden cursor-pointer">
 				<MenuIcon onClick={() => setNav(true)} />
-<<<<<<< HEAD
-				{nav && <div className="  w-full h-max p-5 absolute bg-brand-secondary flex  flex-col  right-0 top-0">
-					<p className="   text-brand-base font-roboto font-bold   self-end cursor-pointer"><CloseIcon onClick={() => setNav(false)} /></p>
-					<div className=" flex flex-col gap-2">
-						<p className=" text-brand-base font-roboto font-bold text-lg">About</p>
-						<p className="text-brand-base  font-roboto font-bold text-lg">Features</p>
-						<button className="  w-1/2 font-roboto font-bold text-lg  t text-brand-secondary  px-5 py-1 bg-brand-base rounded-sm">Log in</button>
-=======
 				{nav && (
 					<div className="  w-full h-max p-5 absolute bg-brand-secondary flex  flex-col  right-0 top-0">
 						<p className="   text-brand-base font-roboto font-bold   self-end cursor-pointer">
@@ -48,7 +40,6 @@ function Navbar() {
 								Log in
 							</button>
 						</div>
->>>>>>> 32b9f98fc70419693cd6c6a7b5d79f6c63440e59
 					</div>
 				)}
 			</div>

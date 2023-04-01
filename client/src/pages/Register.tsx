@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 export default function Signin() {
     return (
-        <div className='   min-w-fit w sm:w-full h-screen  bg-brandv4 flex justify-center items-center'>
-            <div className=' w-max h-max bg-brand-secondary  border border-branv2 border-opacity-10 rounded-md'>
+        <div className='  min-w-fit w sm:w-full h-screen  bg-brandv4 flex justify-center items-center'>
+            <div className=' w-max h-max bg-white   border border-branv2 border-opacity-10 rounded-md'>
                 <div className=' w-full h-max p-5   border-b border-gray-300 border-solid border-1   border-opacity-30 flex justify-center'>
 
                     <Link href="/">   <Image
