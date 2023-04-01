@@ -2,7 +2,7 @@ import { Raleway, IBM_Plex_Sans } from "@next/font/google";
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import { Open_Sans, Roboto, Poppins } from "@next/font/google";
-import "../styles/globals.css";
+
 
 import { useState } from "react";
 const openSans = Open_Sans({
