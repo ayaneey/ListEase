@@ -21,8 +21,10 @@ module.exports = {
 			colors: {
 				"brand-primary": "#6AC8B7",
 				"brand-secondary": "#2A2A31",
-				"brand-base": "#D9D9D9",
-				"green-custom": "rgba(106, 200, 183, 1)",
+
+				"brand-base": "#091F3B",
+				brandv3: "#EAEAEA",
+				brandv4: "#FAFAFA",
 			},
 
 			fontFamily: {
