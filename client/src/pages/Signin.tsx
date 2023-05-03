@@ -1,9 +1,34 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import GoogleIcon from '@mui/icons-material/Google';
 import Link from 'next/link';
+import api from '@/helpers/api';
 
 export default function Signin() {
+    const [input, setInput] = useState({
+        email: '',
+        password: '',
+    })
+
+    //event change handler
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setInput({
+            ...input,
+            [e.target.name]: e.target.value
+        })
+    }
+    //submit handler
+    const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault()
+        try {
+            // sign in user
+            const res = await api.post('auth/signin', input);
+            console.log(res)
+        }
+        catch (err) {
+            console.log(err)
+        }
+    }
     return (
         <div className='   min-w-fit  sm:w-full  h-screen  bg-brandv4 flex justify-center items-center'>
             <div className='  w-max   h-max bg-white  border border-branv2 border-opacity-10 rounded-md'>
@@ -26,13 +51,23 @@ export default function Signin() {
                     }} /> sign in with Google</button>
 
                     <p className=' self-center mt-3'>Or</p>
-                    <p className=' text-base font-openSans text-brand-base/50'>Email</p>
-                    <input type="email" className=' w-full rounded-md  px-4 py-2 mt-1 border-brand-base border border-opacity-20 px' placeholder='e.g example@email.com' />
+                    <p className=' text-base font-openSans text-brand-base/50'
+
+                    >Email</p>
+                    <input type="email" className=' w-full rounded-md  px-4 py-2 mt-1 border-brand-base border border-opacity-20 px' placeholder='e.g example@email.com'
+                        onChange={handleChange}
+                        name='email'
+                    />
                     <div className='  w-full flex justify-between  items-center'>                    <p className=' text-base font-openSans text-brand-base/50  mt-3'>Password</p></div>
 
-                    <input type="password" className=' w-full rounded-md  px-4 py-2 mt-1 border-brand-base border border-opacity-20 px' />
+                    <input type="password" className=' w-full rounded-md  px-4 py-2 mt-1 border-brand-base border border-opacity-20 px'
+                        onChange={handleChange}
+                        name='password'
+                    />
                     <p className=' text-xs font-openSans   text-brand-primary  mt-3'>Forget password ?</p>
-                    <button className=' w-full  bg-brand-primary py-2   rounded-lg mt-3 text-base font-roboto   text-brand-secondary '>Sign in</button>
+                    <button className=' w-full  bg-brand-primary py-2   rounded-lg mt-3 text-base font-roboto   text-brand-secondary '
+                        onClick={handleSubmit}
+                    >Sign in</button>
                     <div className=' gap-3  w-full flex justify-between  items-center'>
                         <p className=' text-sm font-openSans text-brand-base/50  mt-3'>Don&apos;t have an account?</p>
                         <Link href="/Register">
