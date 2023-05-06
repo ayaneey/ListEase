@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import authRoutes from "./routes/Auth.js";
+import userRoutes from "./routes/User.js";
 import connectToDatabase from "./db/connection.js";
 
 const app = express();
@@ -30,6 +31,7 @@ const db = connectToDatabase();
 // });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/user", userRoutes);
 
 app.listen(5005, () => {
 	console.log("Server started on port 5005");
